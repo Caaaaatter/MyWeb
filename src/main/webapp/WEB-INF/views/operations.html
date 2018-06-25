@@ -1,0 +1,24 @@
+<html xmlns:th="http://www.thymeleaf.org"  >
+<head>
+    <title>Title</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <script th:src="@{/resources/js/jquery/jquery-3.3.1.min.js}"></script>
+    <script th:src="@{/resources/js/operation.js}" >/*th:inline="javascript"*/
+    </script>
+</head>
+
+<body id="body">
+
+<form th:action="@{/operations/installTeam}" method="post">
+    <input type="submit" id="installTeam1" value="TeamViewer安装" />
+</form>
+
+  <!--  <button id="installTeam" value="" >
+        TeamViewer安装
+    </button>-->
+
+    <div id="installDiv"></div>
+
+
+</body>
+</html>
