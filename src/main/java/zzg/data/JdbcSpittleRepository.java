@@ -21,6 +21,7 @@ public class JdbcSpittleRepository implements SpittleRepository {
     this.jdbc = jdbc;
   }
 
+  @Override
   public List<Spittle> findRecentSpittles() {
     return jdbc.query(
         "select id, message, created_at, latitude, longitude" +

@@ -3,7 +3,6 @@ package zzg.config.securityConfig;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -16,7 +15,6 @@ import zzg.data.po.User;
 import javax.sql.DataSource;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 
 /**
  * Created by zhangzhenguo
@@ -24,8 +22,8 @@ import java.util.Map;
  * info:用户登录校验
  */
 @Service
-public class UserLoginDetailService implements UserDetailsService{
-    Logger logger = LoggerFactory.getLogger( UserLoginDetailService.class );
+public class UserLoginDetailServiceImpl implements UserDetailsService{
+    Logger logger = LoggerFactory.getLogger( UserLoginDetailServiceImpl.class );
 
     private UserDao userDao;
     @Autowired

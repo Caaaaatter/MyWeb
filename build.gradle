@@ -13,7 +13,7 @@ dependencies {
   compile "org.thymeleaf:thymeleaf-spring4:$thymeleafVersion"
   compile "org.thymeleaf.extras:thymeleaf-extras-springsecurity3:2.1.1.RELEASE"
   compile "org.springframework.ldap:spring-ldap-core:2.0.1.RELEASE"
-  compile 'com.alibaba:druid:1.1.10'
+  compile 'com.alibaba:druid:1.1.5'
   compile 'com.mchange:c3p0:0.9.5.2'
   providedCompile "javax.servlet:javax.servlet-api:$servletApiVersion"
   compile 'net.sourceforge.nekohtml:nekohtml:1.9.22'
@@ -25,6 +25,7 @@ dependencies {
   compile 'ch.qos.logback:logback-core:1.2.3'
   compile 'org.apache.logging.log4j:log4j-core:2.8.2'
   compile 'mysql:mysql-connector-java:5.1.34'
+  compile 'commons-io:commons-io:2.4'
   //  testCompile "junit:junit-dep:$junitVersion"
   testCompile "org.springframework:spring-test:$springVersion"
   testCompile "org.mockito:mockito-core:$mockitoVersion"

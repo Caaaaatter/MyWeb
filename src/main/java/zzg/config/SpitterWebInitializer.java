@@ -2,6 +2,7 @@ package zzg.config;
 
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
+import zzg.config.servlet.druid.DruidStatView;
 import zzg.web.WebConfig;
 
 public class SpitterWebInitializer extends AbstractAnnotationConfigDispatcherServletInitializer {
@@ -13,7 +14,7 @@ public class SpitterWebInitializer extends AbstractAnnotationConfigDispatcherSer
 
   @Override
   protected Class<?>[] getServletConfigClasses() {
-    return new Class<?>[] { WebConfig.class };
+    return new Class<?>[] { WebConfig.class};
   }
 
   @Override

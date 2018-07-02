@@ -16,7 +16,7 @@ import org.springframework.security.web.authentication.rememberme.InMemoryTokenR
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Autowired
-    private UserLoginDetailService userLoginDetailService;
+    private UserLoginDetailServiceImpl userLoginDetailService;
 
   @Override
   protected void configure(HttpSecurity http) throws Exception {
